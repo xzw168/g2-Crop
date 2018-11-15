@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\g2core">
+      <UniqueIdentifier>{ceb105d6-2cda-4ab1-980c-a3403c5b4661}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Motate">
+      <UniqueIdentifier>{23d9ba0a-d842-44f4-a1d1-052171911824}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Motate\Atmel_sam_common">
+      <UniqueIdentifier>{de3cb7c8-d3a8-406e-b276-6a5cad691b4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\board">
+      <UniqueIdentifier>{9606a3a4-7694-49bd-94f2-00429b0ec4a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\win">
+      <UniqueIdentifier>{2407d377-1c45-466d-9107-4bd650bd96fb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="g2core\alarm.cpp">
+      <Filter>源文件\g2core</Filter>
+    </ClCompile>
+    <ClCompile Include="g2core\canonical_machine.cpp">
+      <Filter>源文件\g2core</Filter>
+    </ClCompile>
+    <ClCompile Include="g2core\config.cpp">
+      <Filter>源文件\g2core</Filter>
+    </ClCompile>
+    <ClCompile Include="g2core\config_app.cpp">
+      <Filter>源文件\g2core</Filter>
+    </ClCompile>
+    <ClCompile Include="g2core\controller.cpp">
+      <Filter>源文件\g2core</Filter>
+    </ClCompile>
+    <ClCompile Include="g2core\coolant.cpp">
+      <Filter>源文件\g2core</Filter>
+    </ClCompile>
+    <ClCompile Include="g2core\cycle_feedhold.cpp">
+      <Filter>源文件\g2core</Filter>
+    </ClCompile>
+    <ClCompile Include="g2core\cycle_homing.cpp">
+      <Filter>源文件\g2core</Filter>
+    </ClCompile>
+    <ClCompile Include="g2core\cycle_jogging.cpp">
+      <Filter>源文件\g2core</Filter>
+    </ClCompile>
+    <ClCompile Include="g2core\cycle_probing.cpp">
+      <Filter>源文件\g2core</Filter>
+    </ClCompile>
+    <ClCompile Include="g2core\encoder.cpp">
+      <Filter>源文件\g2core</Filter>
+    </ClCompile>
+    <ClCompile Include="g2core\gcode_parser.cpp">
+      <Filter>源文件\g2core</Filter>
+    </ClCompile>
+    <ClCompile Include="g2core\gpio.cpp">
+      <Filter>源文件\g2core</Filter>
+    </ClCompile>
+    <ClCompile Include="g2core\help.cpp">
+      <Filter>源文件\g2core</Filter>
+    </ClCompile>
+    <ClCompile Include="g2core\json_parser.cpp">
+      <Filter>源文件\g2core</Filter>
+    </ClCompile>
+    <ClCompile Include="g2core\kinematics.cpp">
+      <Filter>源文件\g2core</Filter>
+    </ClCompile>
+    <ClCompile Include="g2core\marlin_compatibility.cpp">
+      <Filter>源文件\g2core</Filter>
+    </ClCompile>
+    <ClCompile Include="g2core\persistence.cpp">
+      <Filter>源文件\g2core</Filter>
+    </ClCompile>
+    <ClCompile Include="g2core\plan_arc.cpp">
+      <Filter>源文件\g2core</Filter>
+    </ClCompile>
+    <ClCompile Include="g2core\plan_exec.cpp">
+      <Filter>源文件\g2core</Filter>
+    </ClCompile>
+    <ClCompile Include="g2core\plan_line.cpp">
+      <Filter>源文件\g2core</Filter>
+    </ClCompile>
+    <ClCompile Include="g2core\plan_zoid.cpp">
+      <Filter>源文件\g2core</Filter>
+    </ClCompile>
+    <ClCompile Include="g2core\planner.cpp">
+      <Filter>源文件\g2core</Filter>
+    </ClCompile>
+    <ClCompile Include="g2core\pwm.cpp">
+      <Filter>源文件\g2core</Filter>
+    </ClCompile>
+    <ClCompile Include="g2core\report.cpp">
+      <Filter>源文件\g2core</Filter>
+    </ClCompile>
+    <ClCompile Include="g2core\spindle.cpp">
+      <Filter>源文件\g2core</Filter>
+    </ClCompile>
+    <ClCompile Include="g2core\stepper.cpp">
+      <Filter>源文件\g2core</Filter>
+    </ClCompile>
+    <ClCompile Include="g2core\temperature.cpp">
+      <Filter>源文件\g2core</Filter>
+    </ClCompile>
+    <ClCompile Include="g2core\text_parser.cpp">
+      <Filter>源文件\g2core</Filter>
+    </ClCompile>
+    <ClCompile Include="g2core\util.cpp">
+      <Filter>源文件\g2core</Filter>
+    </ClCompile>
+    <ClCompile Include="g2core\xio.cpp">
+      <Filter>源文件\g2core</Filter>
+    </ClCompile>
+    <ClCompile Include="Motate\MotateProject\motate\MotateUtilities.cpp">
+      <Filter>源文件\Motate</Filter>
+    </ClCompile>
+    <ClCompile Include="Motate\MotateProject\motate\Atmel_sam_common\SamPins.cpp">
+      <Filter>源文件\Motate\Atmel_sam_common</Filter>
+    </ClCompile>
+    <ClCompile Include="Motate\MotateProject\motate\Atmel_sam_common\SamServiceCall.cpp">
+      <Filter>源文件\Motate\Atmel_sam_common</Filter>
+    </ClCompile>
+    <ClCompile Include="Motate\MotateProject\motate\Atmel_sam_common\SamTimers.cpp">
+      <Filter>源文件\Motate\Atmel_sam_common</Filter>
+    </ClCompile>
+    <ClCompile Include="g2core\board\ArduinoDue\board_stepper.cpp">
+      <Filter>源文件\board</Filter>
+    </ClCompile>
+    <ClCompile Include="g2core\board\ArduinoDue\board_xio.cpp">
+      <Filter>源文件\board</Filter>
+    </ClCompile>
+    <ClCompile Include="g2core\board\ArduinoDue\hardware.cpp">
+      <Filter>源文件\board</Filter>
+    </ClCompile>
+    <ClCompile Include="Motate\MotateProject\motate\Atmel_sam_common\SamUniqueID.cpp">
+      <Filter>源文件\Motate\Atmel_sam_common</Filter>
+    </ClCompile>
+    <ClCompile Include="Motate\MotateProject\motate\Atmel_sam_common\SamPower.cpp">
+      <Filter>源文件\Motate\Atmel_sam_common</Filter>
+    </ClCompile>
+    <ClCompile Include="Motate\MotateProject\motate\Atmel_sam_common\win\xio_usart.cpp">
+      <Filter>源文件\win</Filter>
+    </ClCompile>
+    <ClCompile Include="Motate\MotateProject\motate\Atmel_sam_common\win\th.cpp">
+      <Filter>源文件\win</Filter>
+    </ClCompile>
+    <ClCompile Include="g2core\main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="g2core\canonical_machine.h">
+      <Filter>源文件\g2core</Filter>
+    </ClInclude>
+    <ClInclude Include="g2core\config.h">
+      <Filter>源文件\g2core</Filter>
+    </ClInclude>
+    <ClInclude Include="g2core\config_app.h">
+      <Filter>源文件\g2core</Filter>
+    </ClInclude>
+    <ClInclude Include="g2core\controller.h">
+      <Filter>源文件\g2core</Filter>
+    </ClInclude>
+    <ClInclude Include="g2core\coolant.h">
+      <Filter>源文件\g2core</Filter>
+    </ClInclude>
+    <ClInclude Include="g2core\encoder.h">
+      <Filter>源文件\g2core</Filter>
+    </ClInclude>
+    <ClInclude Include="g2core\error.h">
+      <Filter>源文件\g2core</Filter>
+    </ClInclude>
+    <ClInclude Include="g2core\g2core.h">
+      <Filter>源文件\g2core</Filter>
+    </ClInclude>
+    <ClInclude Include="g2core\g2core_info.h">
+      <Filter>源文件\g2core</Filter>
+    </ClInclude>
+    <ClInclude Include="g2core\gcode.h">
+      <Filter>源文件\g2core</Filter>
+    </ClInclude>
+    <ClInclude Include="g2core\gcode_parser.h">
+      <Filter>源文件\g2core</Filter>
+    </ClInclude>
+    <ClInclude Include="g2core\gpio.h">
+      <Filter>源文件\g2core</Filter>
+    </ClInclude>
+    <ClInclude Include="g2core\help.h">
+      <Filter>源文件\g2core</Filter>
+    </ClInclude>
+    <ClInclude Include="g2core\json_parser.h">
+      <Filter>源文件\g2core</Filter>
+    </ClInclude>
+    <ClInclude Include="g2core\kinematics.h">
+      <Filter>源文件\g2core</Filter>
+    </ClInclude>
+    <ClInclude Include="g2core\marlin_compatibility.h">
+      <Filter>源文件\g2core</Filter>
+    </ClInclude>
+    <ClInclude Include="g2core\persistence.h">
+      <Filter>源文件\g2core</Filter>
+    </ClInclude>
+    <ClInclude Include="g2core\plan_arc.h">
+      <Filter>源文件\g2core</Filter>
+    </ClInclude>
+    <ClInclude Include="g2core\planner.h">
+      <Filter>源文件\g2core</Filter>
+    </ClInclude>
+    <ClInclude Include="g2core\pwm.h">
+      <Filter>源文件\g2core</Filter>
+    </ClInclude>
+    <ClInclude Include="g2core\report.h">
+      <Filter>源文件\g2core</Filter>
+    </ClInclude>
+    <ClInclude Include="g2core\settings.h">
+      <Filter>源文件\g2core</Filter>
+    </ClInclude>
+    <ClInclude Include="g2core\spindle.h">
+      <Filter>源文件\g2core</Filter>
+    </ClInclude>
+    <ClInclude Include="g2core\stepper.h">
+      <Filter>源文件\g2core</Filter>
+    </ClInclude>
+    <ClInclude Include="g2core\temperature.h">
+      <Filter>源文件\g2core</Filter>
+    </ClInclude>
+    <ClInclude Include="g2core\text_parser.h">
+      <Filter>源文件\g2core</Filter>
+    </ClInclude>
+    <ClInclude Include="g2core\util.h">
+      <Filter>源文件\g2core</Filter>
+    </ClInclude>
+    <ClInclude Include="g2core\xio.h">
+      <Filter>源文件\g2core</Filter>
+    </ClInclude>
+    <ClInclude Include="Motate\MotateProject\motate\MotateBuffer.h">
+      <Filter>源文件\Motate</Filter>
+    </ClInclude>
+    <ClInclude Include="Motate\MotateProject\motate\MotateCommon.h">
+      <Filter>源文件\Motate</Filter>
+    </ClInclude>
+    <ClInclude Include="Motate\MotateProject\motate\MotateDebug.h">
+      <Filter>源文件\Motate</Filter>
+    </ClInclude>
+    <ClInclude Include="Motate\MotateProject\motate\MotatePins.h">
+      <Filter>源文件\Motate</Filter>
+    </ClInclude>
+    <ClInclude Include="Motate\MotateProject\motate\MotatePower.h">
+      <Filter>源文件\Motate</Filter>
+    </ClInclude>
+    <ClInclude Include="Motate\MotateProject\motate\MotateSerial.h">
+      <Filter>源文件\Motate</Filter>
+    </ClInclude>
+    <ClInclude Include="Motate\MotateProject\motate\MotateServiceCall.h">
+      <Filter>源文件\Motate</Filter>
+    </ClInclude>
+    <ClInclude Include="Motate\MotateProject\motate\MotateTimers.h">
+      <Filter>源文件\Motate</Filter>
+    </ClInclude>
+    <ClInclude Include="Motate\MotateProject\motate\MotateUniqueID.h">
+      <Filter>源文件\Motate</Filter>
+    </ClInclude>
+    <ClInclude Include="Motate\MotateProject\motate\MotateUtilities.h">
+      <Filter>源文件\Motate</Filter>
+    </ClInclude>
+    <ClInclude Include="Motate\MotateProject\motate\Atmel_sam_common\gShield-pinout.h">
+      <Filter>源文件\Motate\Atmel_sam_common</Filter>
+    </ClInclude>
+    <ClInclude Include="Motate\MotateProject\motate\Atmel_sam_common\HPins.h">
+      <Filter>源文件\Motate\Atmel_sam_common</Filter>
+    </ClInclude>
+    <ClInclude Include="Motate\MotateProject\motate\Atmel_sam_common\motate_pin_assignments.h">
+      <Filter>源文件\Motate\Atmel_sam_common</Filter>
+    </ClInclude>
+    <ClInclude Include="Motate\MotateProject\motate\Atmel_sam_common\SamPins.h">
+      <Filter>源文件\Motate\Atmel_sam_common</Filter>
+    </ClInclude>
+    <ClInclude Include="Motate\MotateProject\motate\Atmel_sam_common\SamPower.h">
+      <Filter>源文件\Motate\Atmel_sam_common</Filter>
+    </ClInclude>
+    <ClInclude Include="Motate\MotateProject\motate\Atmel_sam_common\SamServiceCall.h">
+      <Filter>源文件\Motate\Atmel_sam_common</Filter>
+    </ClInclude>
+    <ClInclude Include="Motate\MotateProject\motate\Atmel_sam_common\SamTimers.h">
+      <Filter>源文件\Motate\Atmel_sam_common</Filter>
+    </ClInclude>
+    <ClInclude Include="Motate\MotateProject\motate\Atmel_sam_common\SamUniqueID.h">
+      <Filter>源文件\Motate\Atmel_sam_common</Filter>
+    </ClInclude>
+    <ClInclude Include="g2core\board\ArduinoDue\board_stepper.h">
+      <Filter>源文件\board</Filter>
+    </ClInclude>
+    <ClInclude Include="g2core\board\ArduinoDue\board_xio.h">
+      <Filter>源文件\board</Filter>
+    </ClInclude>
+    <ClInclude Include="g2core\board\ArduinoDue\gShield-pinout.h">
+      <Filter>源文件\board</Filter>
+    </ClInclude>
+    <ClInclude Include="g2core\board\ArduinoDue\hardware.h">
+      <Filter>源文件\board</Filter>
+    </ClInclude>
+    <ClInclude Include="g2core\board\ArduinoDue\motate_pin_assignments.h">
+      <Filter>源文件\board</Filter>
+    </ClInclude>
+    <ClInclude Include="g2core\board\ArduinoDue\motate_chip_pin_functions.h">
+      <Filter>源文件\board</Filter>
+    </ClInclude>
+    <ClInclude Include="Motate\MotateProject\motate\Atmel_sam_common\win\xio_usart.h">
+      <Filter>源文件\win</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

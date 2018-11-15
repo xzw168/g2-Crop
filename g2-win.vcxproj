@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BC08BDC5-0CE7-416A-B1C4-8A772147619F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>g2win</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;__ARM__;__sam3x__;__SAM3X8C__;SETTINGS_FILE=settings_test.h;MOTATE_BOARD=gShield;GIT_VERSION="101.03-6-g7a25d";GIT_EXACT_VERSION=101.03;DEBUG=0;IN_DEBUGGER=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>L:\g2\g2-win\g2-win\g2core\board\ArduinoDue;Motate\MotateProject\motate\Atmel_sam_common;Motate\MotateProject\motate;g2core\settings;g2core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="g2core\alarm.cpp" />
+    <ClCompile Include="g2core\board\ArduinoDue\board_stepper.cpp" />
+    <ClCompile Include="g2core\board\ArduinoDue\board_xio.cpp" />
+    <ClCompile Include="g2core\board\ArduinoDue\hardware.cpp" />
+    <ClCompile Include="g2core\canonical_machine.cpp" />
+    <ClCompile Include="g2core\config.cpp" />
+    <ClCompile Include="g2core\config_app.cpp" />
+    <ClCompile Include="g2core\controller.cpp" />
+    <ClCompile Include="g2core\coolant.cpp" />
+    <ClCompile Include="g2core\cycle_feedhold.cpp" />
+    <ClCompile Include="g2core\cycle_homing.cpp" />
+    <ClCompile Include="g2core\cycle_jogging.cpp" />
+    <ClCompile Include="g2core\cycle_probing.cpp" />
+    <ClCompile Include="g2core\encoder.cpp" />
+    <ClCompile Include="g2core\gcode_parser.cpp" />
+    <ClCompile Include="g2core\gpio.cpp" />
+    <ClCompile Include="g2core\help.cpp" />
+    <ClCompile Include="g2core\json_parser.cpp" />
+    <ClCompile Include="g2core\kinematics.cpp" />
+    <ClCompile Include="g2core\main.cpp" />
+    <ClCompile Include="g2core\marlin_compatibility.cpp" />
+    <ClCompile Include="g2core\persistence.cpp" />
+    <ClCompile Include="g2core\planner.cpp" />
+    <ClCompile Include="g2core\plan_arc.cpp" />
+    <ClCompile Include="g2core\plan_exec.cpp" />
+    <ClCompile Include="g2core\plan_line.cpp" />
+    <ClCompile Include="g2core\plan_zoid.cpp" />
+    <ClCompile Include="g2core\pwm.cpp" />
+    <ClCompile Include="g2core\report.cpp" />
+    <ClCompile Include="g2core\spindle.cpp" />
+    <ClCompile Include="g2core\stepper.cpp" />
+    <ClCompile Include="g2core\temperature.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="g2core\text_parser.cpp" />
+    <ClCompile Include="g2core\util.cpp" />
+    <ClCompile Include="g2core\xio.cpp" />
+    <ClCompile Include="Motate\MotateProject\motate\Atmel_sam_common\SamPins.cpp" />
+    <ClCompile Include="Motate\MotateProject\motate\Atmel_sam_common\SamPower.cpp" />
+    <ClCompile Include="Motate\MotateProject\motate\Atmel_sam_common\SamServiceCall.cpp" />
+    <ClCompile Include="Motate\MotateProject\motate\Atmel_sam_common\SamTimers.cpp" />
+    <ClCompile Include="Motate\MotateProject\motate\Atmel_sam_common\SamUniqueID.cpp" />
+    <ClCompile Include="Motate\MotateProject\motate\Atmel_sam_common\win\th.cpp" />
+    <ClCompile Include="Motate\MotateProject\motate\Atmel_sam_common\win\xio_usart.cpp" />
+    <ClCompile Include="Motate\MotateProject\motate\MotateUtilities.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="g2core\board\ArduinoDue\board_stepper.h" />
+    <ClInclude Include="g2core\board\ArduinoDue\board_xio.h" />
+    <ClInclude Include="g2core\board\ArduinoDue\gShield-pinout.h" />
+    <ClInclude Include="g2core\board\ArduinoDue\hardware.h" />
+    <ClInclude Include="g2core\board\ArduinoDue\motate_chip_pin_functions.h" />
+    <ClInclude Include="g2core\board\ArduinoDue\motate_pin_assignments.h" />
+    <ClInclude Include="g2core\canonical_machine.h" />
+    <ClInclude Include="g2core\config.h" />
+    <ClInclude Include="g2core\config_app.h" />
+    <ClInclude Include="g2core\controller.h" />
+    <ClInclude Include="g2core\coolant.h" />
+    <ClInclude Include="g2core\encoder.h" />
+    <ClInclude Include="g2core\error.h" />
+    <ClInclude Include="g2core\g2core.h" />
+    <ClInclude Include="g2core\g2core_info.h" />
+    <ClInclude Include="g2core\gcode.h" />
+    <ClInclude Include="g2core\gcode_parser.h" />
+    <ClInclude Include="g2core\gpio.h" />
+    <ClInclude Include="g2core\help.h" />
+    <ClInclude Include="g2core\json_parser.h" />
+    <ClInclude Include="g2core\kinematics.h" />
+    <ClInclude Include="g2core\marlin_compatibility.h" />
+    <ClInclude Include="g2core\persistence.h" />
+    <ClInclude Include="g2core\planner.h" />
+    <ClInclude Include="g2core\plan_arc.h" />
+    <ClInclude Include="g2core\pwm.h" />
+    <ClInclude Include="g2core\report.h" />
+    <ClInclude Include="g2core\settings.h" />
+    <ClInclude Include="g2core\spindle.h" />
+    <ClInclude Include="g2core\stepper.h" />
+    <ClInclude Include="g2core\temperature.h" />
+    <ClInclude Include="g2core\text_parser.h" />
+    <ClInclude Include="g2core\util.h" />
+    <ClInclude Include="g2core\xio.h" />
+    <ClInclude Include="Motate\MotateProject\motate\Atmel_sam_common\gShield-pinout.h" />
+    <ClInclude Include="Motate\MotateProject\motate\Atmel_sam_common\HPins.h" />
+    <ClInclude Include="Motate\MotateProject\motate\Atmel_sam_common\motate_pin_assignments.h" />
+    <ClInclude Include="Motate\MotateProject\motate\Atmel_sam_common\SamPins.h" />
+    <ClInclude Include="Motate\MotateProject\motate\Atmel_sam_common\SamPower.h" />
+    <ClInclude Include="Motate\MotateProject\motate\Atmel_sam_common\SamServiceCall.h" />
+    <ClInclude Include="Motate\MotateProject\motate\Atmel_sam_common\SamTimers.h" />
+    <ClInclude Include="Motate\MotateProject\motate\Atmel_sam_common\SamUniqueID.h" />
+    <ClInclude Include="Motate\MotateProject\motate\Atmel_sam_common\win\xio_usart.h" />
+    <ClInclude Include="Motate\MotateProject\motate\MotateBuffer.h" />
+    <ClInclude Include="Motate\MotateProject\motate\MotateCommon.h" />
+    <ClInclude Include="Motate\MotateProject\motate\MotateDebug.h" />
+    <ClInclude Include="Motate\MotateProject\motate\MotatePins.h" />
+    <ClInclude Include="Motate\MotateProject\motate\MotatePower.h" />
+    <ClInclude Include="Motate\MotateProject\motate\MotateSerial.h" />
+    <ClInclude Include="Motate\MotateProject\motate\MotateServiceCall.h" />
+    <ClInclude Include="Motate\MotateProject\motate\MotateTimers.h" />
+    <ClInclude Include="Motate\MotateProject\motate\MotateUniqueID.h" />
+    <ClInclude Include="Motate\MotateProject\motate\MotateUtilities.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
